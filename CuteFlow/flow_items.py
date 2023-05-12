@@ -13,3 +13,8 @@ from PySide6.QtWidgets import QGraphicsRectItem
 class FlowRectItem(QGraphicsRectItem):
     def __init__(self):
         super(FlowRectItem, self).__init__()
+        self.setup()
+
+    def setup(self):
+        print("added a item")
+

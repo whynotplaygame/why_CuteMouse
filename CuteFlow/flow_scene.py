@@ -18,3 +18,4 @@ class FlowScene(QGraphicsScene):
 
     def setup(self):
         print("setup scene")
+
