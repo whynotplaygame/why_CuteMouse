@@ -8,7 +8,7 @@
     @Version 1.0
 """
 import sys
-from PySide6.QtWidgets import QApplication, QMainWindow, QLayout
+from PySide6.QtWidgets import QApplication, QMainWindow, QBoxLayout
 from flow_view import FlowView
 from flow_scene import FlowScene
 
@@ -22,6 +22,7 @@ class FlowMain(QMainWindow):
         self.setWindowTitle("flow")
         scene = FlowScene()
         view = FlowView(scene)
+
         self.show()
 
 
