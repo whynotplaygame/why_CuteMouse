@@ -9,3 +9,16 @@
 """
 
 
+class FlowSceneConfig:
+
+    flow_scene_width = 300
+    flow_scene_height = 300
+
+
+class FlowMianConfig:
+    flow_main_width = 550
+    flow_mian_height = 350
+
+
+
+

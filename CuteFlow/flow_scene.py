@@ -9,6 +9,7 @@
 """
 
 from PySide6.QtWidgets import QGraphicsScene
+from flow_configs import FlowSceneConfig
 
 
 class FlowScene(QGraphicsScene):
@@ -18,4 +19,14 @@ class FlowScene(QGraphicsScene):
 
     def setup(self):
         print("setup scene")
+        width = FlowSceneConfig.flow_scene_width
+        height = FlowSceneConfig.flow_scene_height
+
+        self.setSceneRect(-width/2, -height/2, width, height)
+
+        self.addText("this is a text in scene")
+
+
+
+
 

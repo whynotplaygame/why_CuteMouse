@@ -8,9 +8,10 @@
     @Version 1.0
 """
 import sys
-from PySide6.QtWidgets import QApplication, QMainWindow, QBoxLayout
+from PySide6.QtWidgets import QApplication, QMainWindow, QVBoxLayout
 from flow_view import FlowView
 from flow_scene import FlowScene
+from flow_configs import FlowMianConfig
 
 
 class FlowMain(QMainWindow):
@@ -20,9 +21,11 @@ class FlowMain(QMainWindow):
 
     def setup(self):
         self.setWindowTitle("flow")
+        self.resize(FlowMianConfig.flow_main_width, FlowMianConfig.flow_mian_height)
+
+        self.layout = QVBoxLayout()
         scene = FlowScene()
         view = FlowView(scene)
-
         self.show()
 
 
