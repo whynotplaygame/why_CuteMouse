@@ -12,8 +12,8 @@ from flow_scene import FlowScene
 
 
 class FlowView(QGraphicsView):
-    def __init__(self, scene: FlowScene):
-        super(FlowView, self).__init__()
+    def __init__(self, scene: FlowScene, parent=None):
+        super(FlowView, self).__init__(parent)
         self.scene = scene
         self.setup()
 
@@ -21,5 +21,7 @@ class FlowView(QGraphicsView):
         self.setWindowTitle("view")
         print("setup view")
         self.setScene(self.scene)
-        self.show()
+
+
+
 

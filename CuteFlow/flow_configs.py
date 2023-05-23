@@ -11,8 +11,8 @@
 
 class FlowSceneConfig:
 
-    flow_scene_width = 300
-    flow_scene_height = 300
+    flow_scene_width = 8500
+    flow_scene_height = 500
 
 
 class FlowMianConfig:
