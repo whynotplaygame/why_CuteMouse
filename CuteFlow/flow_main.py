@@ -25,10 +25,10 @@ class FlowMain(QWidget):
         scene = FlowScene(self)
         view = FlowView(scene, self)
 
-        layout = QBoxLayout(QBoxLayout.BottomToTop)
-        layout.setContentsMargins(10, 10, 10, 10)
-        layout.addWidget(view)
-        self.setLayout(layout)
+        self._layout = QBoxLayout(QBoxLayout.BottomToTop)
+        self._layout.setContentsMargins(10, 10, 10, 10)
+        self._layout.addWidget(view)
+        self.setLayout(self._layout)
 
         self.show()
 

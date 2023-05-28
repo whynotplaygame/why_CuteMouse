@@ -21,6 +21,9 @@ class FlowView(QGraphicsView):
         self.setWindowTitle("view")
         print("setup view")
         self.setScene(self.scene)
+        self.setInteractive(True)
+
+        
 
 
 
