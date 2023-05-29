@@ -22,7 +22,7 @@ class FlowView(QGraphicsView):
         print("setup view")
         self.setScene(self.scene)
         self.setInteractive(True)
-        
+
 
 
 
