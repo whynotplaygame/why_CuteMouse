@@ -52,7 +52,7 @@ class FlowRectItem(QGraphicsItem):
         painter.drawPath(outline.simplified())
 
         title_outline = QPainterPath()
-        
+
 
 
 
