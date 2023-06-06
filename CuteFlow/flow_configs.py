@@ -16,7 +16,7 @@ class FlowSceneConfig:
     flow_scene_width = 1000
     flow_scene_height = 700
 
-    flow_scene_black_bg = '#112621'
+    flow_scene_black_bg = '#333333'
     flow_scene_green_bg = '#48D1CC'
 
     flow_scene_normal_line_color = '#FFB6C1'

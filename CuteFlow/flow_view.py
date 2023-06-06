@@ -9,6 +9,10 @@
 """
 from PySide6.QtWidgets import QGraphicsView
 from flow_scene import FlowScene
+from PySide6.QtWidgets import QGraphicsRectItem
+from PySide6.QtCore import QRectF
+
+from flow_items import  FlowRectItem
 
 
 class FlowView(QGraphicsView):
@@ -22,6 +26,19 @@ class FlowView(QGraphicsView):
         print("setup view")
         self.setScene(self.scene)
         self.setInteractive(True)
+
+
+        Rect1 = QRectF(10,10,100,80)
+        item = FlowRectItem(Rect1)
+        self.scene.addItem(item)
+
+        Rect2 = QRectF(-60,-60,100,80)
+        item2 = FlowRectItem(Rect2)
+        self.scene.addItem(item2)
+
+
+
+
 
 
 
