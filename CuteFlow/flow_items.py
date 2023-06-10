@@ -16,6 +16,12 @@ class FlowRectItem(QGraphicsItem):
     def __init__(self, default_rect: QRectF):
         super(FlowRectItem, self).__init__()
         self.deafultrect = default_rect
+
+        # 可选中，可移动
+        self.setFlags(QGraphicsItem.ItemIsSelectable |
+                      QGraphicsItem.ItemIsMovable |
+                      QGraphicsItem.ItemSendsGeometryChanges)
+
         self.setup()
 
     def setup(self):

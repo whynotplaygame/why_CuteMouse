@@ -28,13 +28,17 @@ class FlowView(QGraphicsView):
         self.setInteractive(True)
 
 
-        Rect1 = QRectF(10,10,100,80)
+        Rect1 = QRectF(50,50,150,140)
         item = FlowRectItem(Rect1)
         self.scene.addItem(item)
 
-        Rect2 = QRectF(-60,-60,100,80)
+        Rect2 = QRectF(-60,-60,100,90)
         item2 = FlowRectItem(Rect2)
         self.scene.addItem(item2)
+
+        Rect3 = QRectF(-180,-180,150,150)
+        item3 = FlowRectItem(Rect3)
+        self.scene.addItem(item3)
 
 
 
